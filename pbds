@@ -1,6 +1,15 @@
-using namespace std;
-#include <ext/pb_ds/assoc_container.hpp>
-#include <ext/pb_ds/tree_policy.hpp>
+//Importing libraries
+//common file for PBDS
+#include<ext/pb_ds/assoc_container.hpp>
+#include<ext/pb_ds/tree_policy.hpp>
+//namespace
 using namespace __gnu_pbds;
-  
-#define ordered_set tree<int, null_type,less<int>, rb_tree_tag,tree_order_statistics_node_update>
+
+typedef tree<ll, null_type, less_equal<ll>, rb_tree_tag, tree_order_statistics_node_update> pbds;
+// pbds A 
+// A.insert(number)
+// A.remove(number)
+// *A.find_by_order(index) --> gives element at given index
+// A.order_of_key(number) --> gives count of elements smaller than number
+// *A.lower_bound(number) --> gives first element that is >= number
+// *A.upper_bound(number) --> gives first element that is > number
